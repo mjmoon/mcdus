@@ -1,0 +1,308 @@
+# Mortality Multiple Cause-of-Death specification
+# https://www.cdc.gov/nchs/nvss/mortality_public_use_data.htm
+url-file: "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/mortality/mort2000us.zip"
+url-doc: "https://www.cdc.gov/nchs/data/dvs/interim2000p1.pdf"
+spec:
+    recordtype:
+        start: 19
+        end: 19
+    residentstatus: 
+        start: 20
+        end: 20
+    stateofoccurrence:
+        start: 21
+        end: 22
+    countyofoccurrence:
+        start: 23
+        end: 25
+    regionofoccurrence:
+        start: 26
+        end: 26
+    divisionofoccurrence:
+        start: 27
+        end: 27
+    statesubcodeofoccurrence:
+        start: 28
+        end: 28
+    expandedstateofoccurrence:
+        start: 29
+        end: 30
+    stateofresidence:
+        start: 31
+        end: 32
+    countyofresidence:
+        start: 33
+        end: 35
+    cityofresidence:
+        start: 36
+        end: 38
+    populationsizeofcityofresidence:
+        start: 39
+        end: 39
+    ismetropolitancountyofresidence:
+        start: 40
+        end: 40
+    regionofresidence:
+        start: 41
+        end: 41
+    divisionofresidence:
+        start: 42
+        end: 42
+    statesubcodeofresidence:
+        start: 43
+        end: 43
+    expandedstateofresidence:
+        start: 44
+        end: 45
+    PMSAofresidence:
+        start: 46
+        end: 48
+    populationsizeofcountyofoccurrence:
+        start: 49
+        end: 49
+    populationsizeofcountyofresidence:
+        start: 50
+        end: 50
+    PMSApopulationsize:
+        start: 51
+        end: 51
+    education89: 
+        start: 52
+        end: 53
+    education6: 
+        start: 54
+        end: 54
+    monthofdeath: 
+        start: 55
+        end: 56
+    sex: 
+        start: 59
+        end: 59
+    race:
+        start: 60
+        end: 61
+    race3:
+        start: 62
+        end: 62
+    race2:
+        start: 63
+        end: 63
+    ageunit: 
+        start: 64
+        end: 64
+    agevalue: 
+        start: 65
+        end: 66
+    age52:
+        start: 67
+        end: 68
+    age27:
+        start: 69
+        end: 70
+    age12:
+        start: 71
+        end: 72
+    age22infant:
+        start: 73
+        end: 74
+    placeofdeath:
+        start: 75
+        end: 75
+    maritalstatus:
+        start: 77
+        end: 77
+    stateofbirth:
+        start: 78
+        end: 79
+    hispanicorigin:
+        start: 80
+        end: 81
+    hispanicoriginrace:
+        start: 82
+        end: 82
+    dayofweekofdeath:
+        start: 83
+        end: 83
+    cityofresidenceFIPS:
+        start: 97
+        end: 101
+    currentdatayear:
+        start: 115
+        end: 118
+    stateofoccurrenceFIPS:
+        start: 119
+        end: 120
+    countyofoccurrenceFIPS:
+        start: 121
+        end: 123
+    stateofresidenceFIPS:
+        start: 124
+        end: 125
+    countyofresidenceFIPS:
+        start:  126
+        end: 128
+    PMSAofresidenceFIPS:
+        start: 129
+        end: 132
+    CMSAofresidenceFIPS:
+        start: 134
+        end: 135
+    injuryatwork:
+        start: 136
+        end: 136
+    raceimputationflag:
+        start: 137
+        end: 137
+    agesubstitutionflag:
+        start: 138
+        end: 138
+    mannerofdeath:
+        start: 139
+        end: 139
+    activity:
+        start: 140
+        end: 140
+    placeofinjury:
+        start: 141
+        end: 141
+    icd10:
+        start: 142
+        end: 145
+    cause358:
+        start: 146
+        end: 148
+    cuase113:
+        start: 151
+        end: 153
+    cause130infant:
+        start: 154
+        end: 156
+    cause39:
+        start: 157
+        end: 158
+    nofentityaxisconditions:
+        start: 160
+        end: 161
+    entityaxiscondition01:
+        start: 162
+        end: 168
+    entityaxiscondition02:
+        start: 169
+        end: 175
+    entityaxiscondition03:
+        start: 176
+        end: 182
+    entityaxiscondition04:
+        start: 183
+        end: 189
+    entityaxiscondition05:
+        start: 190
+        end: 196
+    entityaxiscondition06:
+        start: 197
+        end: 203
+    entityaxiscondition07:
+        start: 204
+        end: 210
+    entityaxiscondition08:
+        start: 211
+        end: 217
+    entityaxiscondition09:
+        start: 218
+        end: 224
+    entityaxiscondition10:
+        start: 225
+        end: 231
+    entityaxiscondition11:
+        start: 232
+        end: 238
+    entityaxiscondition12:
+        start: 239
+        end: 245
+    entityaxiscondition13:
+        start: 246
+        end: 252
+    entityaxiscondition14:
+        start: 253
+        end: 259
+    entityaxiscondition15:
+        start: 260
+        end: 266
+    entityaxiscondition16:
+        start: 267
+        end: 273
+    entityaxiscondition17:
+        start: 274
+        end: 280
+    entityaxiscondition18:
+        start: 281
+        end: 287
+    entityaxiscondition19:
+        start: 288
+        end: 294
+    entityaxiscondition20:
+        start: 295
+        end: 301
+    nofrecordaxisconditions:
+        start: 338
+        end: 339
+    recordaxiscondition01:
+        start: 341
+        end: 345
+    recordaxiscondition02:
+        start: 346
+        end: 350
+    recordaxiscondition03:
+        start: 351
+        end: 355
+    recordaxiscondition04:
+        start: 356
+        end: 360
+    recordaxiscondition05:
+        start: 361
+        end: 365
+    recordaxiscondition06:
+        start: 366
+        end: 370
+    recordaxiscondition07:
+        start: 371
+        end: 375
+    recordaxiscondition08:
+        start: 376
+        end: 380
+    recordaxiscondition09:
+        start: 381
+        end: 385
+    recordaxiscondition10:
+        start: 386
+        end: 390
+    recordaxiscondition11:
+        start: 391
+        end: 395
+    recordaxiscondition12:
+        start: 396
+        end: 400
+    recordaxiscondition13:
+        start: 401
+        end: 405
+    recordaxiscondition14:
+        start: 406
+        end: 410
+    recordaxiscondition15:
+        start: 411
+        end: 415
+    recordaxiscondition16:
+        start: 416
+        end: 420
+    recordaxiscondition17:
+        start: 421
+        end: 425
+    recordaxiscondition18:
+        start: 426
+        end: 430
+    recordaxiscondition19:
+        start: 431
+        end: 435
+    recordaxiscondition20:
+        start: 436
+        end: 440

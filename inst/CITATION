@@ -1,0 +1,11 @@
+citHeader("To cite mcdus in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "mcdus: US Mortality Multiple Cause Files Reader",
+  author   = "Michael Jongho Moon",
+  year     = "2022",
+  note     = "R package version 0.1.0",
+  textVersion = "Moon, M.J. (2022). mcdus: US Mortality Multiple Cause Files Reader. R package version 0.1.0."
+)
+

@@ -1,0 +1,239 @@
+# Mortality Multiple Cause-of-Death specification
+# https://www.cdc.gov/nchs/nvss/mortality_public_use_data.htm
+url-file: "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/mortality/mort2018us.zip"
+url-doc: "https://www.cdc.gov/nchs/data/dvs/Multiple_Cause_Record_Layout_2018-508.pdf"
+spec:
+    residentstatus: 
+        start: 20
+        end: 20
+    education89: 
+        start: 61
+        end: 62
+    education03: 
+        start: 63
+        end: 63
+    educationflag: 
+        start: 64
+        end: 64
+    monthofdeath: 
+        start: 65
+        end: 66
+    sex: 
+        start: 69
+        end: 69
+    ageunit03: 
+        start: 70
+        end: 70
+    agevalue03: 
+        start: 71
+        end: 73
+    agesubstitutionflag:
+        start: 74
+        end: 74
+    age52:
+        start: 75
+        end: 76
+    age27:
+        start: 77
+        end: 78
+    age12:
+        start: 79
+        end: 80
+    age22infant:
+        start: 81
+        end: 82
+    placeofdeath03:
+        start: 83
+        end: 83
+    maritalstatus:
+        start: 84
+        end: 84
+    dayofweekofdeath:
+        start: 85
+        end: 85
+    currentdatayear:
+        start: 102
+        end: 105
+    injuryatwork:
+        start: 106
+        end: 106
+    mannerofdeath:
+        start: 107
+        end: 107
+    methodofdisposition:
+        start: 108
+        end: 108
+    autopsy:
+        start: 109
+        end: 109
+    activity:
+        start: 144
+        end: 144
+    placeofinjury:
+        start: 145
+        end: 145
+    icd10:
+        start: 146
+        end: 149
+    cause358:
+        start: 150
+        end: 152
+    cuase113:
+        start: 154
+        end: 156
+    cause130infant:
+        start: 157
+        end: 159
+    cause39:
+        start: 160
+        end: 161
+    nofentityaxisconditions:
+        start: 163
+        end: 164
+    entityaxiscondition01:
+        start: 165
+        end: 171
+    entityaxiscondition02:
+        start: 172
+        end: 178
+    entityaxiscondition03:
+        start: 179
+        end: 185
+    entityaxiscondition04:
+        start: 186
+        end: 192
+    entityaxiscondition05:
+        start: 193
+        end: 199
+    entityaxiscondition06:
+        start: 200
+        end: 206
+    entityaxiscondition07:
+        start: 207
+        end: 213
+    entityaxiscondition08:
+        start: 214
+        end: 220
+    entityaxiscondition09:
+        start: 221
+        end: 227
+    entityaxiscondition10:
+        start: 228
+        end: 234
+    entityaxiscondition11:
+        start: 235
+        end: 241
+    entityaxiscondition12:
+        start: 242
+        end: 248
+    entityaxiscondition13:
+        start: 249
+        end: 255
+    entityaxiscondition14:
+        start: 256
+        end: 262
+    entityaxiscondition15:
+        start: 263
+        end: 269
+    entityaxiscondition16:
+        start: 270
+        end: 276
+    entityaxiscondition17:
+        start: 277
+        end: 283
+    entityaxiscondition18:
+        start: 284
+        end: 290
+    entityaxiscondition19:
+        start: 291
+        end: 297
+    entityaxiscondition20:
+        start: 298
+        end: 304
+    nofrecordaxisconditions:
+        start: 341
+        end: 342
+    recordaxiscondition01:
+        start: 344
+        end: 348
+    recordaxiscondition02:
+        start: 349
+        end: 353
+    recordaxiscondition03:
+        start: 354
+        end: 358
+    recordaxiscondition04:
+        start: 359
+        end: 363
+    recordaxiscondition05:
+        start: 364
+        end: 368
+    recordaxiscondition06:
+        start: 369
+        end: 373
+    recordaxiscondition07:
+        start: 374
+        end: 378
+    recordaxiscondition08:
+        start: 379
+        end: 383
+    recordaxiscondition09:
+        start: 384
+        end: 388
+    recordaxiscondition10:
+        start: 389
+        end: 393
+    recordaxiscondition11:
+        start: 394
+        end: 398
+    recordaxiscondition12:
+        start: 399
+        end: 403
+    recordaxiscondition13:
+        start: 404
+        end: 408
+    recordaxiscondition14:
+        start: 409
+        end: 413
+    recordaxiscondition15:
+        start: 414
+        end: 418
+    recordaxiscondition16:
+        start: 419
+        end: 423
+    recordaxiscondition17:
+        start: 424
+        end: 428
+    recordaxiscondition18:
+        start: 429
+        end: 433
+    recordaxiscondition19:
+        start: 434
+        end: 438
+    recordaxiscondition20:
+        start: 439
+        end: 443
+    race:
+        start: 445
+        end: 446
+    racebridgedflag:
+        start: 447
+        end: 447
+    raceimputationflag:
+        start: 448
+        end: 448
+    race3:
+        start: 449
+        end: 449
+    race5:
+        start: 450
+        end: 450
+    hispanicorigin:
+        start: 484
+        end: 486
+    hispanicoriginrace:
+        start: 488
+        end: 488
+    race40:
+        start: 489
+        end: 490
