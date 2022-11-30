@@ -59,7 +59,8 @@ test_that("Unavilable years are ignored.", {
     new = new,
     code = {
       expect_warning(download_mcdus_zip(year_unavailable, save_to_wd = TRUE))
-      expect_warning(download_mcdus_zip(c(year, year_unavailable), save_to_wd = TRUE))
+      expect_warning(download_mcdus_zip(
+        c(year, year_unavailable), save_to_wd = TRUE))
       downloaded_files <- list.files(file.path(new, "mcdus"), "*\\.zip")
       expect_true(paste0(year, ".zip") %in% downloaded_files)
       expect_false(paste0(year_unavailable, ".zip") %in% downloaded_files)

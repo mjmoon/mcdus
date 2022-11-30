@@ -16,7 +16,7 @@ test_that("Downladed files are parsed.", {
       uncompress_mcdus_zip(save_to_wd = TRUE, read_from_wd = TRUE)
       mcd_year <- parse_mcdus(year, read_from_wd = TRUE)
       expect_true(all(
-        names(spec[[year]][['spec']]) %in% colnames(mcd_year[[year]])))
+        names(spec[[year]][["spec"]]) %in% colnames(mcd_year[[year]])))
     }
   )
 })
@@ -26,7 +26,9 @@ test_that("Unavilable years are ignored.", {
   withr::with_dir(
     new = new,
     code = {
-      expect_warning({mcd_year <- parse_mcdus(year, read_from_wd = TRUE)})
+      expect_warning({
+        mcd_year <- parse_mcdus(year, read_from_wd = TRUE)
+      })
       expect_length(mcd_year, 0)
       download_mcdus_zip(year, save_to_wd = TRUE)
       uncompress_mcdus_zip(save_to_wd = TRUE, read_from_wd = TRUE)
@@ -37,4 +39,3 @@ test_that("Unavilable years are ignored.", {
     }
   )
 })
-
