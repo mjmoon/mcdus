@@ -19,7 +19,7 @@ get_mcdus_available_years <- function() {
 #' @export
 open_mcdus_documentation <- function(year) {
   if (year %in% get_mcdus_available_years())
-    browseURL(spec[[year]][['url-doc']])
+    utils::browseURL(spec[[year]][['url-doc']])
   else
     stop(paste0("Data for ", year, " not available yet."))
 }
@@ -105,7 +105,7 @@ uncompress_mcdus_zip <- function(
         zipfile <- file.path(zipdir, paste0(year, ".zip"))
         unzdir <- file.path(dest, year)
         message(paste0("Uncompressing file ", zipfile," to directory ", unzdir))
-        unzip(zipfile, exdir = unzdir, unzip = unzip_method)
+        utils::unzip(zipfile, exdir = unzdir, unzip = unzip_method)
       },
       warning = function(e) {
         success <<- FALSE
