@@ -5,8 +5,7 @@
 
 <!-- badges: start -->
 
-[![Codecov test
-coverage](https://codecov.io/gh/mverseanalysis/mverse/branch/master/graph/badge.svg)](https://app.codecov.io/gh/mverseanalysis/mverse?branch=master)
+[![codecov](https://codecov.io/gh/mjmoon/mcdus/branch/master/graph/badge.svg?token=SAK9r1dBLH)](https://codecov.io/gh/mjmoon/mcdus)
 [![R-CMD-check](https://github.com/mjmoon/mcdus/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mjmoon/mcdus/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 

@@ -18,10 +18,11 @@ get_mcdus_available_years <- function() {
 #' \insertRef{mcd}{mcdus}
 #' @export
 open_mcdus_documentation <- function(year) {
-  if (year %in% get_mcdus_available_years())
+  if (year %in% get_mcdus_available_years()) {
     utils::browseURL(spec[[year]][["url-doc"]])
-  else
+  } else {
     stop(paste0("Data for ", year, " not available yet."))
+  }
 }
 
 #' Download zip files.
@@ -51,8 +52,10 @@ download_mcdus_zip <- function(years, save_to_wd = FALSE, timeout = 3600) {
         dest_file <- file.path(dest, paste0(year, ".zip"))
         url <- spec[[year]][["url-file"]]
         message(paste0("Downloading file ", url, " to ", dest_file))
-        resp <- httr::GET(url, httr::write_disk(dest_file, overwrite = TRUE),
-                          httr::progress())
+        resp <- httr::GET(
+          url, httr::write_disk(dest_file, overwrite = TRUE),
+          httr::progress()
+        )
         if (resp$status_code != 200) success <<- FALSE
       },
       warning = function(e) {
@@ -92,11 +95,13 @@ uncompress_mcdus_zip <- function(
   dest <- file.path(ifelse(save_to_wd, getwd(), tempdir(check = TRUE)), "mcdus")
   if (!dir.exists(dest)) dir.create(dest)
   zipdir <- file.path(
-    ifelse(read_from_wd, getwd(), tempdir(check = TRUE)), "mcdus")
+    ifelse(read_from_wd, getwd(), tempdir(check = TRUE)), "mcdus"
+  )
   downloaded <-
     substr(list.files(zipdir, "*\\.zip"), 1, 4)
-  if (length(downloaded) == 0)
+  if (length(downloaded) == 0) {
     stop(paste("No zip files downloaded in", zipdir))
+  }
   if (is.null(years)) years <- downloaded
   years_matched <- check_availability(years, downloaded)
   success <- length(years_matched) == length(years)
@@ -137,7 +142,8 @@ uncompress_mcdus_zip <- function(
 #' @export
 parse_mcdus <- function(years = NULL, read_from_wd = FALSE) {
   srcdir <- file.path(
-    ifelse(read_from_wd, getwd(), tempdir(check = TRUE)), "mcdus")
+    ifelse(read_from_wd, getwd(), tempdir(check = TRUE)), "mcdus"
+  )
   srcyears <- list.dirs(srcdir, full.names = FALSE)
   srcyears <- srcyears[nchar(srcyears) > 0]
   if (is.null(years)) years <- srcyears
@@ -154,7 +160,9 @@ parse_mcdus <- function(years = NULL, read_from_wd = FALSE) {
       col_names = names(year_spec)
     )
     tmp[[year]] <- readr::read_fwf(
-      file, colspec, col_types = strrep("c", nrow(colspec)))
+      file, colspec,
+      col_types = strrep("c", nrow(colspec))
+    )
   }
   tmp
 }
@@ -162,8 +170,10 @@ parse_mcdus <- function(years = NULL, read_from_wd = FALSE) {
 check_availability <- function(requested, available) {
   is_available <- requested %in% available
   if (any(!is_available)) {
-    warning(paste0("Not all years requested are available. Requested years ",
-                   requested[!is_available], " are ignored."))
+    warning(paste0(
+      "Not all years requested are available. Requested years ",
+      requested[!is_available], " are ignored."
+    ))
     requested <- requested[is_available]
   }
   requested
