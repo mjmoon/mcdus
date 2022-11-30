@@ -2,7 +2,7 @@ pandoc: 2.19.2
 pkgdown: 2.0.6
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-11-30T21:14Z
+last_built: 2022-11-30T21:29Z
 urls:
   reference: https://mjmoon.github.io/mcdus/reference
   article: https://mjmoon.github.io/mcdus/articles
