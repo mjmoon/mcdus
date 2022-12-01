@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mjmoon.github.io/mcdus/404.html</loc>
+    <loc>/404.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/LICENSE-text.html</loc>
+    <loc>/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/LICENSE.html</loc>
+    <loc>/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/authors.html</loc>
+    <loc>/authors.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/index.html</loc>
+    <loc>/index.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/reference/download_mcdus_zip.html</loc>
+    <loc>/reference/download_mcdus_zip.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/reference/get_mcdus_available_years.html</loc>
+    <loc>/reference/get_mcdus_available_years.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/reference/index.html</loc>
+    <loc>/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/reference/open_mcdus_documentation.html</loc>
+    <loc>/reference/open_mcdus_documentation.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/reference/parse_mcdus.html</loc>
+    <loc>/reference/parse_mcdus.html</loc>
   </url>
   <url>
-    <loc>https://mjmoon.github.io/mcdus/reference/uncompress_mcdus_zip.html</loc>
+    <loc>/reference/uncompress_mcdus_zip.html</loc>
   </url>
 </urlset>
