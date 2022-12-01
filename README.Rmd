@@ -16,8 +16,8 @@ knitr::opts_chunk$set(
 # mcdus
 
 <!-- badges: start -->
-[![codecov](https://codecov.io/gh/mjmoon/mcdus/branch/master/graph/badge.svg?token=SAK9r1dBLH)](https://codecov.io/gh/mjmoon/mcdus)
 [![R-CMD-check](https://github.com/mjmoon/mcdus/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mjmoon/mcdus/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/gh/mjmoon/mcdus/branch/master/graph/badge.svg?token=SAK9r1dBLH)](https://codecov.io/gh/mjmoon/mcdus)
 <!-- badges: end -->
 
 The goal of `mcdus` is to provide easy and reproducible access to the U.S. Mortality Multiple Cause Files available from the US National Center for Health Statistic's [Vital Statistics Online Data Portal](https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm#Mortality_Multiple). Currently, data files from 1999 to 2020 are avaialble for download using the package covering years since adopting ICD-10.

@@ -5,8 +5,8 @@
 
 <!-- badges: start -->
 
-[![codecov](https://codecov.io/gh/mjmoon/mcdus/branch/master/graph/badge.svg?token=SAK9r1dBLH)](https://codecov.io/gh/mjmoon/mcdus)
 [![R-CMD-check](https://github.com/mjmoon/mcdus/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mjmoon/mcdus/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/gh/mjmoon/mcdus/branch/master/graph/badge.svg?token=SAK9r1dBLH)](https://codecov.io/gh/mjmoon/mcdus)
 <!-- badges: end -->
 
 The goal of `mcdus` is to provide easy and reproducible access to the
