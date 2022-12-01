@@ -288,6 +288,3 @@ spec:
     hispanicoriginrace:
         start: 488
         end: 488
-    race40:
-        start: 489
-        end: 490
