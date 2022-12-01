@@ -89,9 +89,8 @@ download_mcdus_zip <- function(years, save_to_wd = FALSE, timeout = 3600) {
 #' @references
 #' \insertRef{mcd}{mcdus}
 #' @export
-uncompress_mcdus_zip <- function(
-    years = NULL, save_to_wd = FALSE, read_from_wd = FALSE,
-    unzip_method = "unzip") {
+uncompress_mcdus_zip <- function(years = NULL, save_to_wd = FALSE,
+                                 read_from_wd = FALSE, unzip_method = "unzip") {
   dest <- file.path(ifelse(save_to_wd, getwd(), tempdir(check = TRUE)), "mcdus")
   if (!dir.exists(dest)) dir.create(dest)
   zipdir <- file.path(
@@ -111,7 +110,8 @@ uncompress_mcdus_zip <- function(
         zipfile <- file.path(zipdir, paste0(year, ".zip"))
         unzdir <- file.path(dest, year)
         message(paste0(
-          "Uncompressing file ", zipfile, " to directory ", unzdir))
+          "Uncompressing file ", zipfile, " to directory ", unzdir
+        ))
         utils::unzip(zipfile, exdir = unzdir, unzip = unzip_method)
       },
       warning = function(e) {
