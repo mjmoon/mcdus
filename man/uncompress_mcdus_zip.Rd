@@ -27,7 +27,7 @@ TRUE if all files are successfully uncompressed, FALSE otherwise.
 }
 \description{
 Uncompress downloaded Mortality Multiple Cause Files in .zip format
-from \insertCite{mcd}{mcdus} to a destination directory.
+from \insertCite{mcd}{mcdus}.
 }
 \references{
 \insertRef{mcd}{mcdus}
