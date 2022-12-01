@@ -1,6 +1,0 @@
-destination: docs
-url: https://mjmoon.github.io/mcdus
-figures:
-  dpi: 300
-template:
-  bootstrap: 5
