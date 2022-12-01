@@ -13,7 +13,7 @@ The goal of `mcdus` is to provide easy and reproducible access to the
 U.S. Mortality Multiple Cause Files available from the US National
 Center for Health Statistic’s [Vital Statistics Online Data
 Portal](https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm#Mortality_Multiple).
-Currently, data files from 1999 to 2020 are avaialble for download using
+Currently, data files from 1999 to 2020 are available for download using
 the package covering years since adopting ICD-10.
 
 Read the US National Center for Health Statistic’s [Vital Statistics
